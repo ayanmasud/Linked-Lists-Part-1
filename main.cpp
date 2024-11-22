@@ -17,6 +17,11 @@ int main() {
   head->setNext(head2); // next node in first node is second node
   
   cout << head->getNext()->getStudent()->name << endl; // obtain the name of student 2 using the first node
+
+  head->~Node();
+  head2->~Node();
+
+  cout << "Didn't abort";
   
   return 0;
 }
