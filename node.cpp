@@ -19,7 +19,7 @@ Student* Node::getStudent() { // get the student
   return student;
 }
 Node::~Node() { // destructor
-  delete next;
+  next = NULL;
   delete student;
 }
 
